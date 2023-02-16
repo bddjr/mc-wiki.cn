@@ -1,1 +1,6 @@
-<script>location.href=location.href.replace(location.host,'minecraft.fandom.com/zh')</script>
+<p>等待JavaScript</p>
+<script>
+  u=location.href.replace(location.host,'minecraft.fandom.com/zh');
+  document.querySelector("body>p").innerHTML="正在重定向至 "+u;
+  location.href=u;
+</script>
