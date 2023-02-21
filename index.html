@@ -15,3 +15,9 @@
     该短链接并非中文Wiki官方人员搭建。
   </p>
 </body>
+<script>
+  if(location.protocol=='file:'){
+    h=document.querySelector("head>link")
+    h.href=h.href.replace('file','http')
+  }
+</script>
