@@ -1,10 +1,18 @@
-<p>等待JavaScript</p>
+<head>
+  <title>重定向至MC中文wiki</title>
+  <link rel="shortcut icon" type="image/x-icon" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+  <p>等待JS</p>
+</body>
 <script>
-L=location; P=(a)=> document.querySelector("body>p").innerHTML=a
-if(L.protocol=='file:') P('以本地文件目录形式打开，不会重定向。')
-else{
-  U=L.href.replace(L.protocol+'//'+L.host,'https://minecraft.fandom.com/zh')
-  P("正在重定向至<br/>"+U)
-  L.href=U
-}
+  L=location
+  P=(a)=> document.querySelector("body>p").innerHTML=a
+  if(L.protocol=='file:') P('别用file协议')
+  else{
+    U=L.href.replace(L.protocol+'//'+L.host,'https://minecraft.fandom.com/zh')
+    P("正在重定向至<br/>"+U)
+    L.href=U
+  }
 </script>
